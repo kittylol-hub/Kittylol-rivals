@@ -541,6 +541,7 @@ function Library:init(__title : string?) : Library
 	__resize_button.ImageColor3 = Color3.fromRGB(120, 120, 120)
 	__resize_button.ZIndex = 10
 	__resize_button.Parent = __main
+    __resize_button.Visible = false
 
 	self.__resizing = false
 
