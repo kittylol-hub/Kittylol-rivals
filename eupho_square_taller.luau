@@ -652,7 +652,7 @@ function Library:init(__title : string?) : Library
 	task.spawn(function()
 		task.wait(0.05)
 
-		local __target_width : number = 680
+		local __target_width : number = 600
 		local __target_height : number = 680
 
 		if self.__device == 'mobile' or self.__device == 'unknown' then
