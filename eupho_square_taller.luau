@@ -652,15 +652,15 @@ function Library:init(__title : string?) : Library
 	task.spawn(function()
 		task.wait(0.05)
 
-		local __target_width : number = 600
-		local __target_height : number = 680
+		local __target_width : number = 698
+        local __target_height : number = 479
 
 		if self.__device == 'mobile' or self.__device == 'unknown' then
-			self:get_screen_scale()
+         self:get_screen_scale()
 
-			__target_width = math.floor(Camera.ViewportSize.X * 0.65)
-			__target_height = math.floor(Camera.ViewportSize.Y * 0.86)
-		end
+        __target_width = 698
+        __target_height = 479
+       end
 
 		local __grow_tween = __create_tween(__main, {
 			Size = UDim2.new(0, __target_width, 0, __target_height),
