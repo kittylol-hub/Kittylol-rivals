@@ -658,7 +658,7 @@ function Library:init(__title : string?) : Library
 		if self.__device == 'mobile' or self.__device == 'unknown' then
 			self:get_screen_scale()
 
-			__target_width = math.floor(Camera.ViewportSize.X * 0.84)
+			__target_width = math.floor(Camera.ViewportSize.X * 0.65)
 			__target_height = math.floor(Camera.ViewportSize.Y * 0.86)
 		end
 
